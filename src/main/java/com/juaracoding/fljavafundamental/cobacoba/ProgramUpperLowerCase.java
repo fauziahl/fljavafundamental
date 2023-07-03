@@ -23,28 +23,33 @@ public class ProgramUpperLowerCase {
 
         String strInput = "";   //Variabel untuk menampung input string
         char chInput = 'a';     //Variabel untuk menampung karakter string
-        int intCharacter = 0;   //Variabel untuk convert huruf menjadi kode ASCII
+        int intHuruf = 0;       //Variabel untuk convert huruf menjadi kode ASCII
 
         System.out.print("Masukan Huruf: ");
         strInput = scanner.next();
         chInput = strInput.charAt(0);
-        intCharacter = chInput;
+        intHuruf = chInput;
+        System.out.println(programUpperLowerCase(intHuruf));
+    }
+
+        public static String programUpperLowerCase(int intCharacter) {
+            String strOutput = "";
 
             //Jika huruf besar
-            if(intCharacter>=65 && intCharacter<= 90){
-                System.out.println("Ini huruf besar");
+            if (intCharacter >= 65 && intCharacter <= 90) {
+                strOutput = "Ini huruf besar";
             }
 
             //Jika huruf kecil
-            else if(intCharacter>=97 && intCharacter<= 122){
-                System.out.println("Ini huruf kecil");
+            else if (intCharacter >= 97 && intCharacter <= 122) {
+                strOutput = "Ini huruf kecil";
             }
 
             //Jika bukan huruf
-            else{
-                System.out.println("Ini bukan huruf");
+            else {
+                strOutput = "Ini bukan huruf";
             }
 
-
-    }
+            return strOutput;
+        }
 }
