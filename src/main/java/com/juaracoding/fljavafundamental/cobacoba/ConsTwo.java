@@ -14,6 +14,9 @@ public class ConsTwo {
         ConsOne consOne = new ConsOne();
         System.out.println(consOne.getStrKata());
 
+        consOne.setStrKata("Hola");
+        System.out.println(consOne.getStrKata());
+
         consOne = new ConsOne("Hai");
         System.out.println(consOne.getStrKata());
     }
