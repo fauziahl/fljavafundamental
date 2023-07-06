@@ -38,14 +38,13 @@ public class Praktikum3 {
 
     //Method menghitung nilai rata-rata
     public static double rataRata(ArrayList<Double> arrList){
-        Double dototal = 0.0;   //Variabel untuk menghitung total nilai
+        double dototal = 0.0;   //Variabel untuk menghitung total nilai
         double doResult = 0.0;  //Variabel untuk menampung hasil rata-rata
 
         //Total nilai input
-        for(int i = 0; i < arrList.size(); i++){
-            dototal += arrList.get(i);
+        for(double i : arrList){
+            dototal += i;
         }
-
         //Rata-rata nilai input
         doResult = dototal/arrList.size();
         return doResult;
