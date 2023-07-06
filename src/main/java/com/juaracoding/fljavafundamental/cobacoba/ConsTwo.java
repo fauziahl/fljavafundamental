@@ -12,12 +12,12 @@ Version 1.0
 public class ConsTwo {
     public static void main(String[] args) {
         ConsOne consOne = new ConsOne();
-        System.out.println(consOne.getStrKata());
+        //System.out.println(consOne.getStrKata());
 
         consOne.setStrKata("Hola");
-        System.out.println(consOne.getStrKata());
+        //System.out.println(consOne.getStrKata());
 
         consOne = new ConsOne("Hai", 11);
-        consOne.getStrKata();
+        System.out.println(consOne.getStrKata());
     }
 }

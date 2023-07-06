@@ -22,7 +22,7 @@ public class ConsOne {
         this.strKata = strKata;
         this.intAngka = intAngka;
 
-        System.out.println(strKata);
+        //System.out.println(strKata);
         System.out.println(intAngka);
     }
 
